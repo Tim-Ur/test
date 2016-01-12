@@ -1,0 +1,34 @@
+{% extends "menu.html" %}
+{% block title %}Загрузка справочника{% endblock %}
+{% block head %}
+<script type="text/javascript" src="js/node_modules/angular-file-upload/dist/angular-file-upload.min.js"></script>
+{% endblock %}
+{% block content %}
+<h1>Импорт справочника из JSON</h1>
+<script type="text/javascript">
+	angular
+	    .module('app', ['angularFileUpload'])
+	    .controller('AppController', function($scope, FileUploader) {
+	        $scope.uploader = new FileUploader({
+	        	url: 'data.php',
+	        	alias: 'data',
+	        	formData: [{
+	        		action: "import_contacts"
+	        	}],
+	        	method: 'POST',
+	        	queueLimit: 1
+	        });
+	    });
+</script>
+<div ng-app="app">
+    <div ng-controller="AppController">
+        <input type="file" nv-file-select uploader="uploader" ng-click="uploader.clearQueue();"/><br/>
+        <ul>
+            <li ng-repeat="item in uploader.queue">
+                Файл: <span ng-bind="item.file.name"></span><br/>
+                <button ng-click="item.upload()">Экспортировать</button>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

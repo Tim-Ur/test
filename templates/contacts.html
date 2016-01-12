@@ -1,0 +1,100 @@
+{% extends "menu.html" %}
+{% block title %}Справочник.webApp{% endblock %}
+{% block head %}
+<script type="text/javascript" src="js/node_modules/angular-smart-table/dist/smart-table.min.js"></script>
+{% endblock %}
+{% block content %}
+<h1>Справочник</h1>
+<script type="text/javascript">
+	var app = angular.module('app',['smart-table']);
+	app.config(function($interpolateProvider){
+	   	$interpolateProvider.startSymbol('{[{');
+	   	$interpolateProvider.endSymbol('}]}');
+	});
+	app.controller('AppController', ['$scope', '$http', '$filter', function (scope, http, filter)
+	{
+		scope.f_first_name = '';
+		scope.f_country = '';
+		scope.edit = function (id) {
+			window.open('?page=editor&id='+id, 'contactsEditRecord','menubar=no,toolbar=no,directories=no,location=yes,resizable=no,scrollbars=yes,status=no,height=500,width=760');
+		};
+		scope.reload = function () {
+			http(
+			{
+			  	method: 'GET',
+			  	url: 'data.php',
+			  	params: {
+			  		action: 'get_contacts',
+			  		first_name: scope.f_first_name,
+			  		country: scope.f_country
+			  	}
+			}
+			).success(function(response) {
+			    scope.rowCollection = response;
+		  	});
+		};
+		scope.reload();
+	    scope.displayedCollection = [].concat(scope.rowCollection);
+	}]);
+</script>
+<div ng-app="app">
+	<div ng-controller="AppController">
+		<table st-table="displayedCollection" st-safe-src="rowCollection" class="table table-striped">
+			<thead>
+				<tr>
+				    <th>Фильтры</th>
+					<th st-sort="first_name">first_name</th>
+					<th st-sort="last_name">last_name</th>
+					<th st-sort="email">email</th>
+					<th>country</th>
+					<th></th>
+				</tr>
+			    <tr>
+			    	<th><input type="button" disabled class="input-sm form-control" value="Клиентский"/></th>
+			        <th>
+			            <input st-search="first_name" placeholder="введите имя" class="input-sm form-control" type="search"/>
+			        </th>
+			        <th>
+			            <input st-search="last_name" placeholder="введите фамилию" class="input-sm form-control" type="search"/>
+			        </th>
+			        <th>
+			            <input st-search="email" placeholder="введите email" class="input-sm form-control" type="search"/>
+			        </th>
+			        <th></th>
+			        <th></th>
+			    </tr>			    
+			    <tr>
+			    	<th><input type="button" disabled class="input-sm form-control" value="Серверный"/></th>
+			        <th>
+			            <input ng-model="f_first_name" placeholder="введите имя" class="input-sm form-control" type="search"/>
+			        </th>
+			        <th>
+			        </th>
+			        <th>
+			        </th>
+			        <th>
+			        	<select class="input-sm form-control" ng-model="f_country">
+			        		{% for key,val in countries %}
+                            	<option value="{{val}}">{{val}}</option>
+                            {% endfor %}
+			        	</select>
+			        </th>
+			        <th>
+			        	<input type="button" value="Фильтровать" class="input-sm form-control" ng-click="reload();">
+			        </th>
+			    </tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="row in displayedCollection" ng-click="edit(row.id);">
+					<td></td>
+					<td>{[{row.first_name}]}</td>
+					<td>{[{row.last_name}]}</td>
+					<td>{[{row.email}]}</td>
+					<td>{[{row.country}]}</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

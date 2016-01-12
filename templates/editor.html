@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Справочник.webApp{% endblock %}
+{% block head %}
+{% endblock %}
+{% block content %}
+<h1>Редактирование записи</h1>
+<script type="text/javascript">
+	var app = angular.module('app',[]);
+	app.config(function($interpolateProvider){
+	   	$interpolateProvider.startSymbol('{[{');
+	   	$interpolateProvider.endSymbol('}]}');
+	});
+
+	app.controller('AppController', function ($scope, $http)
+	{
+		$scope.reload = function () 
+		{
+			$http(
+			{
+			  	method: 'GET',
+			  	url: 'data.php',
+			  	params: {
+			  		action: 'get_record',
+			  		id: {{id}}
+			  	}
+			}
+			).then(function (response) {
+			    $scope.record = response.data;
+		  	},function () {});
+		};
+		$scope.save = function ()
+		{
+			$http(
+			{
+				method: 'POST',
+				url: 'data.php',
+				data: {
+					action: 'update_record',
+					data: $scope.record
+				}
+			}
+			).then(function (response) {
+				$scope.reload();
+			},function () {});
+		};
+		$scope.reload();
+	});
+</script>
+<div ng-app="app">
+	<table ng-controller="AppController" class="table table-striped">
+		<thead>
+			<tr>
+			    <th>id</th>
+				<th>first_name</th>
+				<th>last_name</th>
+				<th>email</th>
+				<th>country</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="button" disabled class="input-sm form-control" value="{[{record.id}]}"/></td>
+				<td><input ng-model="record.first_name" type="text" class="input-sm form-control"/></td>
+				<td><input ng-model="record.last_name" type="text" class="input-sm form-control"/></td>
+				<td><input ng-model="record.email" type="text" class="input-sm form-control"/></td>
+				<td><input ng-model="record.country" type="text" class="input-sm form-control"/></td>
+				<td>
+					<input type="button" value="Прочитать" class="input-sm form-control" ng-click="reload()"/>
+					<input type="button" value="Записать" class="input-sm form-control" ng-click="save()"/>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="js/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="favicons/notebook-152-26776.png">
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="favicons/notebook-144-26776.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/notebook-152-26776.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/notebook-144-26776.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/notebook-120-26776.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/notebook-114-26776.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/notebook-72-26776.png">
+        <link rel="apple-touch-icon-precomposed" href="favicons/notebook-57-26776.png">
+        <link rel="icon" href="favicons/notebook-32-26776.png" sizes="32x32">
+        <script type="text/javascript" src="js/node_modules/angular/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        {% block menu %}{% endblock %}
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

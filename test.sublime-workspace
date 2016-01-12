@@ -1,0 +1,421 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"colle",
+				"collectionname"
+			],
+			[
+				"htm",
+				"htmlspecialchars"
+			],
+			[
+				"f_",
+				"f_first_name"
+			],
+			[
+				"te",
+				"title	Attr"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"resp",
+				"resparr"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"in",
+				"interpolateProvider"
+			],
+			[
+				"an",
+				"angular-smart-table"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"conta",
+				"contactsCtrl"
+			],
+			[
+				"co",
+				"contacts"
+			],
+			[
+				"f",
+				"foreach	foreach …"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"tmp",
+				"tmp_name"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"c",
+				"cursor"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 659,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "php/utils.php",
+			"settings":
+			{
+				"buffer_size": 246,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "php/storage.php",
+			"settings":
+			{
+				"buffer_size": 1722,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data.php",
+			"settings":
+			{
+				"buffer_size": 873,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Soft/apache/htdocs/test",
+		"/D/Soft/apache/htdocs/test/css",
+		"/D/Soft/apache/htdocs/test/docs",
+		"/D/Soft/apache/htdocs/test/js",
+		"/D/Soft/apache/htdocs/test/php",
+		"/D/Soft/apache/htdocs/test/templates"
+	],
+	"file_history":
+	[
+		"/D/Soft/apache/htdocs/test/data.php",
+		"/D/Soft/apache/htdocs/test/php/storage.php",
+		"/D/Soft/apache/htdocs/test/php/utils.php",
+		"/D/Soft/apache/htdocs/test/templates/editor.html",
+		"/D/Soft/apache/htdocs/test/import.php",
+		"/D/Soft/apache/htdocs/test/templates/contacts.html",
+		"/D/Soft/apache/htdocs/test/templates/menu.html",
+		"/D/Soft/apache/htdocs/test/templates/base.html",
+		"/D/Soft/apache/htdocs/test/templates/import.html",
+		"/D/Soft/apache/htdocs/test/css/base.css",
+		"/D/Soft/apache/htdocs/test/edit.php",
+		"/D/Soft/apache/htdocs/test/templates/back.html",
+		"/D/Soft/apache/htdocs/test/js/package.json",
+		"/D/Soft/apache/htdocs/test/js/README",
+		"/D/Soft/apache/htdocs/test/composer.json",
+		"/C/Documents and Settings/User/Application Data/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/Soft/apache/htdocs/test/docs/MOCK_DATA.json",
+		"/D/Soft/apache/htdocs/test/test.sublime-project",
+		"/C/Documents and Settings/User/Application Data/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/Soft/apache/htdocs/phpinfo.php",
+		"/D/Soft/apache/conf/httpd.conf"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"st",
+			"\"",
+			"f"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "php/utils.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243,
+								243
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "php/storage.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1718,
+								1718
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "data.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "test.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

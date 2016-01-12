@@ -1,0 +1,8 @@
+{	
+	"name": "tim.ur/example",
+    "require": {
+    	"php": ">=5.4.45",
+    	"ext-mongo": "1.4.5",
+		"twig/twig": "~1.0"
+    }
+}

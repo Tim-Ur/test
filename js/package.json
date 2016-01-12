@@ -1,0 +1,11 @@
+{
+	"name": "test",
+	"description": "Dummy package for autoinstalling dependencies",
+  	"version": "1.0.0",
+  	"dependencies": {
+  		"angular": "1.4.8",
+  		"angular-smart-table": "2.1.6",
+  		"angular-file-upload": "2.2.0",
+  		"bootstrap": "latest"
+  	}
+}
